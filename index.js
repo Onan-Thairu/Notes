@@ -73,7 +73,6 @@ app.post('/api/notes', (request, response) => {
   }
   
   notes = notes.concat(note)
-  console.log(note)
   response.json(note)
 })
 
