@@ -1,3 +1,5 @@
+// Database helper program
+
 const mongoose = require('mongoose')
 
 if (process.argv.length < 3) {
@@ -20,7 +22,7 @@ const noteSchema = new mongoose.Schema({
 const Note = mongoose.model('Note', noteSchema)
 
 const note = new Note({
-    content: 'Callback-functions suck',
+    content: 'Why I\'m I having a hard time with Mongo',
     date: new Date(),
     important: true,
 })
